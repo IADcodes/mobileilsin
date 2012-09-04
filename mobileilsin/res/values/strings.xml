@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">모바일일신</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">나는 자연인이다!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_home">Home</string>
 
