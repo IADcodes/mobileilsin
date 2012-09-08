@@ -16,17 +16,19 @@ public class Home extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         
-        list = (ListView)findViewById(R.id.listView1);
-        
-        ArrayList<String> dataArr = new ArrayList<String>();
-        dataArr.add("공지사항");
-        dataArr.add("점심메뉴");
-        dataArr.add("학교정보");
-        dataArr.add("앱 정보");
+        ListView listView = (ListView) findViewById(R.id.listView1);
+        String[] values = new String[] { "공지사항", "점심메뉴", "학교정보",
+          "앱 정보"};
 
-        ArrayAdapter<String> Adapter = new ArrayAdapter<String>  (this, android.R.layout.simple_list_item_1, dataArr);
+        // First paramenter - Context
+        // Second parameter - Layout for the row
+        // Third parameter - ID of the TextView to which the data is written
+        // Forth - the Array of data
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+          android.R.layout.simple_list_item_1, android.R.id.text1, values);
 
-        list.setAdapter(Adapter);
+        // Assign adapter to ListView
+        listView.setAdapter(adapter); 
     }
 
     
