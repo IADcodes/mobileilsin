@@ -5,5 +5,8 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_home">모바일일신</string>
     <string name="title_activity_notification">공지사항</string>
+    <string name="title_activity_launchmenu">점심메뉴</string>
+    <string name="title_activity_schoolinfo">학교정보</string>
+    <string name="title_activity_appinfo">앱 정보</string>
 
 </resources>
