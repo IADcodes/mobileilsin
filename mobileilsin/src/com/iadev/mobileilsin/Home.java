@@ -22,19 +22,32 @@ public class Home extends ListActivity {
     setListAdapter(adapter);
   }
   
-  public void onListItemClick(ListView l, View v, int position, long id){ 
-	     super.onListItemClick(l, v, position, id); 
-	  Toast.makeText(getApplicationContext(),
-		      "Click ListItem Number " + position, Toast.LENGTH_LONG)
-		      .show();
+  protected void onListItemClick(ListView l, View v, int position, long id) {
+	  super.onListItemClick(l, v, position, id);
 	  
-	  if(position == 0);
-	  Intent intent = new Intent( Home.this,Notification.class);
+	  if(position == 0){
+	  Intent intent = new Intent( Home.this, Notification.class);
 	  startActivity(intent);
-		  }
+	  }
+	  
+	  else if(position == 1){
+	  Intent intent1 = new Intent( Home.this, Launchmenu.class);
+	  startActivity(intent1);
+	  }
+	  
+	  else if(position == 2){
+	  Intent intent2 = new Intent( Home.this, Schoolinfo.class);
+	  startActivity(intent2);
+	  }
+	  
+	  else if(position == 3){
+	  Intent intent2 = new Intent( Home.this, Appinfo.class);
+	  startActivity(intent2);
+	  }
+  }
+
 		 
     // Do something with the data
 
+}
   
-  
-} 
