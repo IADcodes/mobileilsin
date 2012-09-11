@@ -5,6 +5,7 @@ package com.iadev.mobileilsin;
 import java.util.ArrayList;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -21,11 +22,15 @@ public class Home extends ListActivity {
     setListAdapter(adapter);
   }
   
-  @Override
-  public void onListItemClick(ListView l, View v, int position, long id) {
+  public void onListItemClick(ListView l, View v, int position, long id){ 
+	     super.onListItemClick(l, v, position, id); 
 	  Toast.makeText(getApplicationContext(),
 		      "Click ListItem Number " + position, Toast.LENGTH_LONG)
 		      .show();
+	  
+	  if(position == 0);
+	  Intent intent = new Intent( Home.this,Notification.class);
+	  startActivity(intent);
 		  }
 		 
     // Do something with the data
