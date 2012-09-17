@@ -40,8 +40,8 @@ public class Home extends ListActivity {
 	  }
 	  
 	  else if(position == 3){
-	  Intent intent2 = new Intent( Home.this, Appinfo.class);
-	  startActivity(intent2);
+	  Intent intent3 = new Intent( Home.this, Appinfo.class);
+	  startActivity(intent3);
 	  }
   }
 
