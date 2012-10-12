@@ -5,10 +5,6 @@ import android.app.Activity;
 import android.view.Menu;
 import android.webkit.*;
 
-public class Notification extends com.tinymission.rss.FeedActivity
+public class Notification extends Activity
  {
-	@Override
-	public String getFeedUrl() {
-		return "[]";
-	}
 }

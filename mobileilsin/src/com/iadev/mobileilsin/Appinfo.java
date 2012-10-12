@@ -25,10 +25,10 @@ import android.widget.AdapterView.OnItemClickListener;
 		ListView lview;
 		Listview2textAdapter lviewAdapter;
 
-		private final static String item[] = {"¾ÖÇÃ¸®ÄÉÀÌ¼Ç ¹öÀü","¾ÖÇÃ¸®ÄÉÀÌ¼Ç °³¹ßÀÚ","IADµ¿¾Æ¸® È¨ÆäÀÌÁö ¹æ¹®","¾ÖÇÃ¸®ÄÉÀÌ¼Ç ¾÷µ¥ÀÌÆ® È®ÀÎ","¾ÖÇÃ¸®ÄÉÀÌ¼Ç ¼Ò°³"};
+		private final static String item[] = {"ì• í”Œë¦¬ì¼€ì´ì…˜ ë²„ì „","ì• í”Œë¦¬ì¼€ì´ì…˜ ê°œë°œì","IADë™ì•„ë¦¬ í™ˆí˜ì´ì§€ ë°©ë¬¸","ì•± ì—…ëŒ€ì´íŠ¸ í™•ì¸","ì• í”Œë¦¬ì¼€ì´ì…˜ ì†Œê°œ"};
 
-		private final static String subitem[] = {"0.1_2012.09.17", "ÇÑ¿µºó, ÀÌ¼®ÁØ, ³ªÀÏ¿õ","µ¿¾Æ¸® È¨ÆäÀÌÁö ¹æ¹®ÇÏ±â", "ÇÃ·¹ÀÌ ½ºÅä¾î¿¡¼­ ¾ÖÇÃ¸®ÄÉÀÌ¼Ç ¾÷µ¥ÀÌÆ® È®ÀÎ",
-			"¾ÖÇÃ¸®ÄÉÀÌ¼Ç¿¡ ´ëÇÑ ¼Ò°³ º¸±â"};
+		private final static String subitem[] = {"0.1_2012.09.17", "í•œì˜ë¹ˆ, ë‚˜ì¼ì›…, ì´ì„ì¤€","í„°ì¹˜í•˜ì—¬ ë™ì•„ë¦¬ í™ˆí˜ì´ì§€ ë°©ë¬¸", "Google Play Storeì—ì„œ ì—…ëŒ€ì´íŠ¸ í™•ì¸",
+			"ì• í”Œë¦¬ì¼€ì´ì…˜ì— ëŒ€í•œ ì†Œê°œ ë³´ê¸°"};
 
 		@Override
 	    public void onCreate(Bundle savedInstanceState) {

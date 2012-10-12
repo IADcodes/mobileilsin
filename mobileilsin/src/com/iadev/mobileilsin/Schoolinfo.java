@@ -23,9 +23,9 @@ import android.widget.AdapterView.OnItemClickListener;
 		ListView lview;
 		Listview2textAdapter lviewAdapter;
 
-		private final static String item[] = {"ÇĞ±³ È¨ÆäÀÌÁö ¹æ¹®","ÇĞ±³ ÀüÈ­¹øÈ£","ÇĞ±³À§Ä¡"};
+		private final static String item[] = {"í•™êµ í™ˆí˜ì´ì§€ ë°©ë¬¸","í•™êµ ì „í™”ë²ˆí˜¸","í•™êµ ìœ„ì¹˜"};
 
-		private final static String subitem[] = {"ºÎÃµÀÏ½ÅÁßÇĞ±³ È¨ÆäÀÌÁö ¹æ¹®ÇÏ±â", "±³¹«½Ç: 070-7099-8711\nÇàÁ¤½Ç: 070-7099-8703\nÆÑ½º: 032-351-0304","°æ±âµµ ºÎÃµ½Ã ¼Ò»ç±¸ ¹ü¾È·Î96¹ø±æ 44(¹ü¹Úµ¿) ºÎÃµÀÏ½ÅÁßÇĞ±³\n\nÅ¬¸¯ÇÏ¿© GoogleÁöµµ¿¡¼­ ÇĞ±³À§Ä¡ ÀÚ¼¼È÷ º¸±â"};
+		private final static String subitem[] = {"í„°ì¹˜í•˜ì—¬ í•™êµ í™ˆí˜ì´ì§€ ë°©ë¬¸", "êµë¬´ì‹¤: 070-7099-8711\ní–‰ì •ì‹¤: 070-7099-8703\n Fax: 032-351-0304","422-804 ê²½ê¸°ë„ ë¶€ì²œì‹œ ì†Œì‚¬êµ¬ ê´´ì•ˆë™ \n ë²”ì•ˆë¡œ 96ë²ˆê¸¸ 44 (ë²”ë°•ë™) ë¶€ì²œì¼ì‹ ì¤‘í•™êµ \n\n í„°ì¹˜í•˜ì—¬ Google Mapsì—ì„œ í•™êµìœ„ì¹˜ í™•ì¸"};
 
 		@Override
 	    public void onCreate(Bundle savedInstanceState) {

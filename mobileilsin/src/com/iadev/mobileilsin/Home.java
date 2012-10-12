@@ -14,8 +14,8 @@ import android.widget.ListView;
 public class Home extends ListActivity {
   public void onCreate(Bundle icicle) {
     super.onCreate(icicle);
-    String[] values = new String[] { "°øÁö»çÇ×", "Á¡½É¸Ş´º", "ÇĞ±³Á¤º¸",
-        "¾Û Á¤º¸" };
+    String[] values = new String[] { "ê³µì§€ì‚¬í•­", "ì ì‹¬ì‹ì‚¬", "í•™êµì •ë³´",
+        "ì•± ì •ë³´" };
     ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
         android.R.layout.simple_list_item_1, values);
     setListAdapter(adapter);
