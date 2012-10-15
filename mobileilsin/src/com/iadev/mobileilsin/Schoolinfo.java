@@ -25,7 +25,7 @@ import android.widget.AdapterView.OnItemClickListener;
 
 		private final static String item[] = {"학교 홈페이지 방문","학교 전화번호","학교 위치"};
 
-		private final static String subitem[] = {"터치하여 학교 홈페이지 방문", "교무실: 070-7099-8711\n행정실: 070-7099-8703\n Fax: 032-351-0304","422-804 경기도 부천시 소사구 괴안동 \n 범안로 96번길 44 (범박동) 부천일신중학교 \n\n 터치하여 Google Maps에서 학교위치 확인"};
+		private final static String subitem[] = {"터치하여 학교 홈페이지 방문", "교무실: 070-7099-8711\n행정실: 070-7099-8703\n Fax: 032-351-0304","422-804 경기도 부천시 소사구 괴안동 \n범안로 96번길 44 (범박동) 부천일신중학교 \n\n터치하여 Google Maps에서 학교위치 확인"};
 
 		@Override
 	    public void onCreate(Bundle savedInstanceState) {

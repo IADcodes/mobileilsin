@@ -27,7 +27,7 @@ import android.widget.AdapterView.OnItemClickListener;
 
 		private final static String item[] = {"애플리케이션 버전","애플리케이션 개발자","IAD동아리 홈페이지 방문","앱 업대이트 확인","애플리케이션 소개"};
 
-		private final static String subitem[] = {"0.1_2012.09.17", "한영빈, 나일웅, 이석준","터치하여 동아리 홈페이지 방문", "Google Play Store에서 업대이트 확인",
+		private final static String subitem[] = {"0.2_2012.10.15", "한영빈, 나일웅, 이석준","터치하여 동아리 홈페이지 방문", "Google Play Store에서 업대이트 확인",
 			"애플리케이션에 대한 소개 보기"};
 
 		@Override
