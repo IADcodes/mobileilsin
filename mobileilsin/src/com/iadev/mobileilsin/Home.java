@@ -14,7 +14,7 @@ import android.widget.ListView;
 public class Home extends ListActivity {
   public void onCreate(Bundle icicle) {
     super.onCreate(icicle);
-    String[] values = new String[] { "공지사항", "점심식사", "학교정보",
+    String[] values = new String[] { "공지사항", "점심메뉴", "학교정보",
         "앱 정보" };
     ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
         android.R.layout.simple_list_item_1, values);
