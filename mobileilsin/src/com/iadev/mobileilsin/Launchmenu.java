@@ -22,7 +22,7 @@ public class Launchmenu extends Activity{
         // 웹뷰에서 자바스크립트실행가능
         mWebView.getSettings().setJavaScriptEnabled(true); 
         // 구글홈페이지 지정
-        mWebView.loadUrl("http://bcilsin.ms.kr/?act=news.main&comm=com");
+        mWebView.loadUrl("http://bcilsin.ms.kr/?act=lunch.main");
         // WebViewClient 지정
         mWebView.setWebViewClient(new WebViewClientClass());  
          
