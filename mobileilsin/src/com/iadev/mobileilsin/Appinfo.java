@@ -55,7 +55,8 @@ import android.widget.AdapterView.OnItemClickListener;
   	  }
   	  
   	  else if(position == 3){
-  	  Intent intent1 = new Intent( Appinfo.this, Launchmenu.class);
+  	  Intent intent1 = new Intent(Intent.ACTION_VIEW);
+  	   intent1.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.iadev.mobileilsin&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5pYWRldi5tb2JpbGVpbHNpbiJd"));
   	  startActivity(intent1);
   	  }
   	  
