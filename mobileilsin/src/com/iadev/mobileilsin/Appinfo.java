@@ -25,10 +25,10 @@ import android.widget.AdapterView.OnItemClickListener;
 		ListView lview;
 		Listview2textAdapter lviewAdapter;
 
-		private final static String item[] = {"애플리케이션 버전","애플리케이션 개발자","IAD동아리 홈페이지 방문","앱 업데이트 확인","애플리케이션 소개"};
+		private final static String item[] = {"애플리케이션 버전","애플리케이션 개발자","IAD동아리 홈페이지 방문","앱 업데이트 확인","애플리케이션 소개", "오픈소스 라이센스"};
 
-		private final static String subitem[] = {"0.1 beta1", "한영빈, 나일웅, 이석준","터치하여 동아리 홈페이지 방문", "Google Play Store에서 업데이트 확인",
-			"애플리케이션에 대한 소개 보기"};
+		private final static String subitem[] = {"0.1beta2", "한영빈, 나일웅, 이석준","터치하여 동아리 홈페이지 방문", "Google Play Store에서 업데이트 확인",
+			"애플리케이션에 대한 소개 보기", "이 애플리케이션은 오픈소스이며, Mozilla Public License 2.0에 의거하여 소스코드가 공개되어 있습니다 "};
 
 		@Override
 	    public void onCreate(Bundle savedInstanceState) {
@@ -66,6 +66,11 @@ import android.widget.AdapterView.OnItemClickListener;
   	  startActivity(intent2);
   	  }
   	  
+  	  
+  	else if(position == 5){
+		  Intent intent3 = new Intent( Appinfo.this, License.class);
+		  startActivity(intent3);
+		  }
     }
 	        
 		}

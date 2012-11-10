@@ -1,12 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iadev.mobileilsin"
-    android:versionCode="2"
-    android:versionName="0.1 beta1" >
+    android:versionCode="3"
+    android:versionName="0.1beta2" >
 
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="15" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:icon="@drawable/icon_app"
@@ -23,39 +24,45 @@
         </activity>
         <activity
             android:name=".Notification"
-            android:label="@string/title_activity_notification" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:label="@string/title_activity_notification" android:parentActivityName="@string/title_activity_home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iadev.mobileilsin.Home" />
         </activity>
         <activity
             android:name=".Launchmenu"
             android:label="@string/title_activity_launchmenu" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iadev.mobileilsin.Home" />
         </activity>
         <activity
             android:name=".Schoolinfo"
             android:label="@string/title_activity_schoolinfo" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iadev.mobileilsin.Home" />
         </activity>
         <activity
             android:name=".Appinfo"
             android:label="@string/title_activity_appinfo" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iadev.mobileilsin.Home" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iadev.mobileilsin.Home" />
+        </activity>
+        <activity
+            android:name=".License"
+            android:label="@string/title_activity_license" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iadev.mobileilsin.Appinfo" />
         </activity>
     </application>
 

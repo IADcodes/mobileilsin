@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="home">
+        <item>공지사항	</item>
+        <item>점심메뉴</item>
+        <item>학교정보</item>
+        <item>앱 정보</item>
+    </string-array>
+
+</resources>
