@@ -17,7 +17,7 @@ import com.iadev.mobileilsin.Arrayadapter;
 public class Home extends ListActivity {
 	 
 	static final String[] MAIN = 
-               new String[] { "공지사항", "점심메뉴", "학교정보", "앱 정보"};
+               new String[] { "공지사항", "점심메뉴(오늘)", "학교정보", "앱 정보"};
  
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

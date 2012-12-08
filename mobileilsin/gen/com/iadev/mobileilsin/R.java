@@ -31,9 +31,9 @@ public final class R {
         public static final int logo=0x7f090008;
         public static final int menu_settings=0x7f09000a;
         public static final int scrollView=0x7f090004;
-        public static final int textView1=0x7f090006;
+        public static final int textView1=0x7f090003;
         public static final int textView2=0x7f090007;
-        public static final int webView1=0x7f090003;
+        public static final int webView1=0x7f090006;
     }
     public static final class layout {
         public static final int activity_appinfo=0x7f030000;

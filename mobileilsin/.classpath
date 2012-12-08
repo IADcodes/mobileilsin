@@ -6,5 +6,6 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry kind="lib" path="jericho-android.3.1.jar"/>
 	<classpathentry kind="lib" path="libs/htmlcleaner-2.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jspiner_parser"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
