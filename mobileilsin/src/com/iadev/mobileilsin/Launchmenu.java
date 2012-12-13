@@ -2,19 +2,29 @@ package com.iadev.mobileilsin;
 
 import java.util.Calendar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import jsm.JSpiner.JSpiner_parser.*;
 import android.os.Handler;
+import android.provider.AlarmClock;
 
 public class Launchmenu extends Activity{
 	private Handler handler;
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_launchmenu);
+		
+		
+				
 		handler = new Handler();  
 		new Thread(runnable).start();
+		
 	}
+	
+	
 	Runnable runnable = new Runnable(){
 		public void run(){
 			final Calendar c = Calendar.getInstance();
@@ -49,4 +59,6 @@ public class Launchmenu extends Activity{
 			});
 		}  
 	};
-};
+	
+	
+		}

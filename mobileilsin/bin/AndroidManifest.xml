@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iadev.mobileilsin"
     android:versionCode="4"
@@ -5,16 +6,17 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="15" />
+        android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
         android:icon="@drawable/icon_app"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".Home"
+            android:name="com.iadev.mobileilsin.Home"
             android:label="@string/title_activity_home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,46 +25,63 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Notification"
-            android:label="@string/title_activity_notification" android:parentActivityName="@string/title_activity_home">
+            android:name="com.iadev.mobileilsin.Notification"
+            android:label="@string/title_activity_notification"
+            android:parentActivityName="@string/title_activity_home" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.iadev.mobileilsin.Home" />
         </activity>
         <activity
-            android:name=".Launchmenu"
+            android:name="com.iadev.mobileilsin.Launchmenu"
             android:label="@string/title_activity_launchmenu" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.iadev.mobileilsin.Home" />
         </activity>
         <activity
-            android:name=".Schoolinfo"
+            android:name="com.iadev.mobileilsin.Schoolinfo"
             android:label="@string/title_activity_schoolinfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.iadev.mobileilsin.Home" />
         </activity>
         <activity
-            android:name=".Appinfo"
+            android:name="com.iadev.mobileilsin.Appinfo"
             android:label="@string/title_activity_appinfo" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.iadev.mobileilsin.Home" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.iadev.mobileilsin.MainActivity"
             android:label="@string/title_activity_main" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.iadev.mobileilsin.Home" />
         </activity>
         <activity
-            android:name=".License"
+            android:name="com.iadev.mobileilsin.License"
             android:label="@string/title_activity_license" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.iadev.mobileilsin.Appinfo" />
+        </activity>
+        <activity
+            android:name="com.iadev.mobileilsin.Schoolalarm"
+            android:label="@string/title_activity_schoolalarm"
+            android:parentActivityName="com.iadev.mobileilsin.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iadev.mobileilsin.Home" />
+        </activity>
+        <activity
+            android:name="com.iadev.mobileilsin.Monthlunch"
+            android:label="@string/title_activity_monthlunch"
+            android:parentActivityName="com.iadev.mobileilsin.Launchmenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iadev.mobileilsin.Launchmenu" />
         </activity>
     </application>
 

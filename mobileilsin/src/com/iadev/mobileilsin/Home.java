@@ -17,7 +17,7 @@ import com.iadev.mobileilsin.Arrayadapter;
 public class Home extends ListActivity {
 	 
 	static final String[] MAIN = 
-               new String[] { "공지사항", "점심메뉴(오늘)", "학교정보", "앱 정보"};
+               new String[] { "공지사항", "점심메뉴", "학교정보", "등교시간 알람", "앱 정보"};
  
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -46,9 +46,14 @@ public class Home extends ListActivity {
 			  }
 
 			  else if(position == 3){
-			  Intent intent3 = new Intent( Home.this, Appinfo.class);
+			  Intent intent3 = new Intent( Home.this, Schoolalarm.class);
 			  startActivity(intent3);
 			  }
+		 
+			  else if(position == 4){
+			  Intent intent3 = new Intent( Home.this, Appinfo.class);
+			  startActivity(intent3);
+				  }
 		  }
 
 

@@ -37,10 +37,12 @@ public class Arrayadapter extends ArrayAdapter<String> {
  
 		if (s.equals("공지사항")) {
 			imageView.setImageResource(R.drawable.icon_scnoti);
-		} else if (s.equals("점심메뉴(오늘)")) {
+		} else if (s.equals("점심메뉴")) {
 			imageView.setImageResource(R.drawable.icon_lunch);
 		} else if (s.equals("학교정보")) {
 			imageView.setImageResource(R.drawable.icon_scinfo);
+		} else if (s.equals("등교시간 알람")) {
+			imageView.setImageResource(R.drawable.icon_alarm);
 		} else {
 			imageView.setImageResource(R.drawable.icon_appinfo);
 		}
