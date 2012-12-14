@@ -25,10 +25,10 @@ import android.widget.AdapterView.OnItemClickListener;
 		ListView lview;
 		Listview2textAdapter lviewAdapter;
 
-		private final static String item[] = {"애플리케이션 버전","애플리케이션 개발자","IAD동아리 홈페이지 방문","앱 업데이트 확인","애플리케이션 소개", "오픈소스 라이센스"};
+		private final static String item[] = {"애플리케이션 버전","모바일일신 초기버전 개발자", "모바일일신 이전 개발자", "현재 모바일일신 개발자","IAD동아리 홈페이지 방문","앱 업데이트 확인","애플리케이션 소개", "오픈소스 라이센스"};
 
-		private final static String subitem[] = {"0.1beta2", "한영빈, 나일웅, 이석준","터치하여 동아리 홈페이지 방문", "Google Play Store에서 업데이트 확인",
-			"애플리케이션에 대한 소개 보기", "이 애플리케이션은 오픈소스이며, Mozilla Public License 2.0에 의거하여 소스코드가 공개되어 있습니다 "};
+		private final static String subitem[] = {"0.5", "한영빈, 나일웅, 이석준(2012년)","없음", "한영빈, 나일웅, 이석준","터치하여 동아리 홈페이지 방문", "Google Play Store에서 업데이트 확인",
+			"애플리케이션에 대한 소개 보기", "이 애플리케이션은 오픈소스이며,\nMozilla Public License 2.0에 의거하여 \n소스코드가 공개되어 있습니다 "};
 
 		@Override
 	    public void onCreate(Bundle savedInstanceState) {
@@ -48,26 +48,26 @@ import android.widget.AdapterView.OnItemClickListener;
 		public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) {
 			// TODO Auto-generated method stub
   	  
-  	  if(position == 2){
+  	  if(position == 4){
   		Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("http://iadev.3owl.com"));
         startActivity(intent);
   	  }
   	  
-  	  else if(position == 3){
+  	  else if(position == 5){
   	  Intent intent1 = new Intent(Intent.ACTION_VIEW);
   	   intent1.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.iadev.mobileilsin&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5pYWRldi5tb2JpbGVpbHNpbiJd"));
   	  startActivity(intent1);
   	  }
   	  
-  	  else if(position == 4){
+  	  else if(position == 6){
   	  Intent intent2 = new Intent(Intent.ACTION_VIEW);
   	intent2.setData(Uri.parse("http://iadev.3owl.com/site/?project=%EA%B0%9C%EB%B0%9C%EC%A4%91%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%9D%BC%EC%8B%A0"));
   	  startActivity(intent2);
   	  }
   	  
   	  
-  	else if(position == 5){
+  	else if(position == 7){
 		  Intent intent3 = new Intent( Appinfo.this, License.class);
 		  startActivity(intent3);
 		  }

@@ -21,8 +21,10 @@ public final class R {
         public static final int icon_app=0x7f020004;
         public static final int icon_appinfo=0x7f020005;
         public static final int icon_lunch=0x7f020006;
-        public static final int icon_scinfo=0x7f020007;
-        public static final int icon_scnoti=0x7f020008;
+        public static final int icon_month=0x7f020007;
+        public static final int icon_scinfo=0x7f020008;
+        public static final int icon_scnoti=0x7f020009;
+        public static final int icon_today=0x7f02000a;
     }
     public static final class id {
         public static final int Menu=0x7f090001;
@@ -41,24 +43,26 @@ public final class R {
         public static final int activity_home=0x7f030001;
         public static final int activity_launchmenu=0x7f030002;
         public static final int activity_license=0x7f030003;
-        public static final int activity_main=0x7f030004;
-        public static final int activity_monthlunch=0x7f030005;
-        public static final int activity_notification=0x7f030006;
-        public static final int activity_schoolalarm=0x7f030007;
-        public static final int activity_schoolinfo=0x7f030008;
-        public static final int list_2text_row=0x7f030009;
-        public static final int listrow=0x7f03000a;
+        public static final int activity_lunch=0x7f030004;
+        public static final int activity_main=0x7f030005;
+        public static final int activity_monthlunch=0x7f030006;
+        public static final int activity_notification=0x7f030007;
+        public static final int activity_schoolalarm=0x7f030008;
+        public static final int activity_schoolinfo=0x7f030009;
+        public static final int list_2text_row=0x7f03000a;
+        public static final int listrow=0x7f03000b;
     }
     public static final class menu {
         public static final int activity_appinfo=0x7f080000;
         public static final int activity_home=0x7f080001;
         public static final int activity_launchmenu=0x7f080002;
         public static final int activity_license=0x7f080003;
-        public static final int activity_main=0x7f080004;
-        public static final int activity_monthlunch=0x7f080005;
-        public static final int activity_notification=0x7f080006;
-        public static final int activity_schoolalarm=0x7f080007;
-        public static final int activity_schoolinfo=0x7f080008;
+        public static final int activity_lunch=0x7f080004;
+        public static final int activity_main=0x7f080005;
+        public static final int activity_monthlunch=0x7f080006;
+        public static final int activity_notification=0x7f080007;
+        public static final int activity_schoolalarm=0x7f080008;
+        public static final int activity_schoolinfo=0x7f080009;
     }
     public static final class raw {
         public static final int license=0x7f040000;
@@ -73,6 +77,7 @@ public final class R {
         public static final int title_activity_home=0x7f060003;
         public static final int title_activity_launchmenu=0x7f060005;
         public static final int title_activity_license=0x7f060009;
+        public static final int title_activity_lunch=0x7f06000e;
         public static final int title_activity_main=0x7f060008;
         public static final int title_activity_monthlunch=0x7f06000d;
         public static final int title_activity_notification=0x7f060004;

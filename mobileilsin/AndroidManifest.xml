@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iadev.mobileilsin"
-    android:versionCode="4"
-    android:versionName="0.1beta3" >
+    android:versionCode="5"
+    android:versionName="0.5" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -35,9 +35,10 @@
         <activity
             android:name="com.iadev.mobileilsin.Launchmenu"
             android:label="@string/title_activity_launchmenu" >
+            android:parentActivityName="com.iadev.mobileilsin.Lunch" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.iadev.mobileilsin.Home" />
+                android:value="com.iadev.mobileilsin.Lunch" />
         </activity>
         <activity
             android:name="com.iadev.mobileilsin.Schoolinfo"
@@ -49,6 +50,7 @@
         <activity
             android:name="com.iadev.mobileilsin.Appinfo"
             android:label="@string/title_activity_appinfo" >
+            android:parentActivityName="@string/title_activity_home" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.iadev.mobileilsin.Home" />
@@ -78,10 +80,18 @@
         <activity
             android:name="com.iadev.mobileilsin.Monthlunch"
             android:label="@string/title_activity_monthlunch"
-            android:parentActivityName="com.iadev.mobileilsin.Launchmenu" >
+            android:parentActivityName="com.iadev.mobileilsin.Lunch" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.iadev.mobileilsin.Launchmenu" />
+                android:value="com.iadev.mobileilsin.Lunch" />
+        </activity>
+        <activity
+            android:name="com.iadev.mobileilsin.Lunch"
+            android:label="@string/title_activity_lunch"
+            android:parentActivityName="com.iadev.mobileilsin.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.iadev.mobileilsin.Home" />
         </activity>
     </application>
 

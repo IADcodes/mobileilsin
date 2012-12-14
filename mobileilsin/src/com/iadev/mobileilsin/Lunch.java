@@ -1,5 +1,3 @@
-
-
 package com.iadev.mobileilsin;
 
 import android.app.Activity;
@@ -14,20 +12,14 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
-public class Home extends Activity implements OnItemClickListener{
+public class Lunch extends Activity implements OnItemClickListener{
 GridView menu;
 private String[] menu_text = {
-"공지사항",
-"점심메뉴",
-"학교정보",
-"등교시간 알람",
-"앱 정보"};
+"오늘 점심메뉴",
+"이번달 식단표"};
 private Integer[] menu_icon = {
-R.drawable.icon_scnoti,
-R.drawable.icon_lunch,
-R.drawable.icon_scinfo,
-R.drawable.icon_alarm,
-R.drawable.icon_appinfo};
+R.drawable.icon_today,
+R.drawable.icon_month};
 public void onCreate(Bundle savedInstanceState) {
 super.onCreate(savedInstanceState);
 setContentView(R.layout.activity_home);
@@ -51,29 +43,14 @@ return row;
 public void onItemClick(AdapterView arg0, View arg1, int arg2, long arg3) {
 	
 	if(arg2 == 0){
-		  Intent intent = new Intent( Home.this, Notification.class);
+		  Intent intent = new Intent( Lunch.this, Launchmenu.class);
 		  startActivity(intent);
 		  }
 
 		  else if(arg2 == 1){
-		  Intent intent1 = new Intent( Home.this, Lunch.class);
+		  Intent intent1 = new Intent( Lunch.this, Monthlunch.class);
 		  startActivity(intent1);
 		  }
-
-		  else if(arg2 == 2){
-		  Intent intent2 = new Intent( Home.this, Schoolinfo.class);
-		  startActivity(intent2);
-		  }
-
-		  else if(arg2 == 3){
-		  Intent intent3 = new Intent( Home.this, Schoolalarm.class);
-		  startActivity(intent3);
-		  }
-
-		  else if(arg2 == 4){
-		  Intent intent3 = new Intent( Home.this, Appinfo.class);
-		  startActivity(intent3);
-			  }
 // TODO Action to perform
 }
 }
