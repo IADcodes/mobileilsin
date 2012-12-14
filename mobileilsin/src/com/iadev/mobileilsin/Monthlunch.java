@@ -1,15 +1,10 @@
 package com.iadev.mobileilsin;
 
-import com.iadev.mobileilsin.Monthlunch.WebViewClientClass;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.support.v4.app.NavUtils;
 
 public class Monthlunch extends Activity{
     

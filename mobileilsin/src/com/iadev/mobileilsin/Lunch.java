@@ -22,7 +22,7 @@ R.drawable.icon_today,
 R.drawable.icon_month};
 public void onCreate(Bundle savedInstanceState) {
 super.onCreate(savedInstanceState);
-setContentView(R.layout.activity_home);
+setContentView(R.layout.activity_lunch);
 menu = (GridView)findViewById(R.id.Menu);
 menu.setOnItemClickListener(this);
 menu.setAdapter(new MenuItem(this, R.layout.listrow, menu_text));

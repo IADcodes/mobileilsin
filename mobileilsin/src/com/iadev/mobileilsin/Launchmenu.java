@@ -2,14 +2,10 @@ package com.iadev.mobileilsin;
 
 import java.util.Calendar;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import jsm.JSpiner.JSpiner_parser.*;
 import android.os.Handler;
-import android.provider.AlarmClock;
 
 public class Launchmenu extends Activity{
 	private Handler handler;
