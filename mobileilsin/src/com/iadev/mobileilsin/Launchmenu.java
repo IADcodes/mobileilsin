@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 import jsm.JSpiner.JSpiner_parser.*;
 import android.os.Handler;
+import com.iadev.bcilsin.R;
 
 public class Launchmenu extends Activity{
 	private Handler handler;

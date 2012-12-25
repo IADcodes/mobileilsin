@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
+import com.iadev.bcilsin.R;
 public class Lunch extends Activity implements OnItemClickListener{
 GridView menu;
 private String[] menu_text = {

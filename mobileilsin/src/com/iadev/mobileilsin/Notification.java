@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import com.iadev.bcilsin.R;
  
 public class Notification extends Activity{
      

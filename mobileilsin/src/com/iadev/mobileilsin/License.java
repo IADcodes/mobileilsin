@@ -7,6 +7,7 @@ import java.io.InputStream;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
+import com.iadev.bcilsin.R;
 
 public class License extends Activity {
     /** Called when the activity is first created. */
