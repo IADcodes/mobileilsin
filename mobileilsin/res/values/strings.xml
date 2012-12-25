@@ -12,7 +12,7 @@
     <string name="title_activity_main">점심메뉴(오늘)</string>
     <string name="title_activity_license">오픈소스 라이센스</string>
     <string name="title_activity_schoolalarm">등교시간 알람</string>
-    <string name="scalarm_desc">버튼을 누르면\n오전 7시 40분, 8시, 8시 20분\n알람이 설정됩니다\n알람 앱애서 알람 설정을\n변경하지 않는이상\n설정된 알람은 한번만 울립니다</string>
+    <string name="scalarm_desc">버튼을 누르면\n오전 7시 40분, 8시, 8시 20분\n알람이 설정됩니다\n알람 앱애서 알람 설정을\n변경하지 않는이상\n설정된 알람은 한번만 울립니다\n일부 기기에서는 완벽히\n작동하지 않을 수 있습니다.</string>
     <string name="schoolalarm_btn">알람 설정하기</string>
     <string name="title_activity_monthlunch">이번달 식단표</string>
     <string name="title_activity_lunch">점심메뉴</string>
