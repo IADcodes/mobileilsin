@@ -54,7 +54,7 @@ import com.iadev.bcilsin.R;
   	  
   	  else if(position == 5){
   	  Intent intent1 = new Intent(Intent.ACTION_VIEW);
-  	   intent1.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.iadev.mobileilsin&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5pYWRldi5tb2JpbGVpbHNpbiJd"));
+  	   intent1.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.iadev.bcilsin"));
   	  startActivity(intent1);
   	  }
   	  
