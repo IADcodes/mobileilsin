@@ -25,7 +25,7 @@ import com.iadev.bcilsin.R;
 
 		private final static String item[] = {"앱 패키지 네임 / 앱 버전","모바일일신 초기버전 개발자", "모바일일신 이전 개발자", "현재 모바일일신 개발자","IAD동아리 홈페이지 방문","앱 업데이트 확인","애플리케이션 소개", "오픈소스 라이센스"};
 
-		private final static String subitem[] = {"com.iadev.bcilsin / 0.5.1", "한영빈, 나일웅, 이석준(2012년)","없음", "한영빈, 나일웅, 이석준","터치하여 동아리 홈페이지 방문", "Google Play Store에서 업데이트 확인",
+		private final static String subitem[] = {"com.iadev.bcilsin / 0.5.2", "한영빈, 나일웅, 이석준(2012년)","없음", "한영빈, 나일웅, 이석준","터치하여 동아리 홈페이지 방문", "Google Play Store에서 업데이트 확인",
 			"애플리케이션에 대한 소개 보기", "이 애플리케이션은 오픈소스이며,\nMozilla Public License 2.0에 의거하여 \n소스코드가 공개되어 있습니다 "};
 
 		@Override
