@@ -6,7 +6,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
-import com.iadev.bcilsin.R;
+import kr.iadev.bcilsin.R;
 
 public class Schoolalarm extends Activity{
 	public void onCreate(Bundle savedInstanceState) {

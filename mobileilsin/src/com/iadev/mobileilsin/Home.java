@@ -14,7 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
-import com.iadev.bcilsin.R;
+import kr.iadev.bcilsin.R;
 public class Home extends Activity implements OnItemClickListener{
 GridView menu;
 private String[] menu_text = {

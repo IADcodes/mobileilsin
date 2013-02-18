@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import com.iadev.bcilsin.R;
+import kr.iadev.bcilsin.R;
 
 public class Listview2textAdapter extends BaseAdapter{
 

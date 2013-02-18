@@ -5,7 +5,7 @@ import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TabHost;
-import com.iadev.bcilsin.R;
+import kr.iadev.bcilsin.R;
 
 public class Lunch extends TabActivity {
 	@Override
