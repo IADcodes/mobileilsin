@@ -16,7 +16,6 @@ import kr.iadev.bcilsin.R;
 
 
 	public class Schoolinfo extends Activity implements OnItemClickListener {
-		/** Called when the activity is first created. */
 
 		ListView lview;
 		Listview2textAdapter lviewAdapter;
@@ -58,8 +57,7 @@ import kr.iadev.bcilsin.R;
   	  
   	  
     }
-	        
-		}
+}
 	
     
     

@@ -10,8 +10,7 @@ import android.widget.TextView;
 import kr.iadev.bcilsin.R;
 
 public class License extends Activity {
-    /** Called when the activity is first created. */
-    @Override
+	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_license);

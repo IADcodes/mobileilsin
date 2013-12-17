@@ -1,15 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GridView
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/Menu"
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
-android:numColumns="auto_fit"
-android:verticalSpacing="25dp"
-android:horizontalSpacing="10dp"
-android:columnWidth="70dp"
-android:stretchMode="columnWidth"
-android:gravity="center_horizontal|top"
-android:scrollbars="none"
-android:paddingTop="10dp">
-</GridView>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<com.fima.cardsui.views.CardUI
+        android:id="@+id/cardsview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView1" />
+</LinearLayout>

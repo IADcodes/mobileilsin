@@ -34,6 +34,6 @@ public class Schoolalarm extends Activity{
 			startActivity(a);
 		}
 		});
-		}
+	}
 
-		}
+}

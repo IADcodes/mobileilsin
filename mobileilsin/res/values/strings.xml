@@ -2,8 +2,12 @@
 <resources>
 
     <string name="app_name">모바일일신</string>
-    <string name="hello_world">나는 자연인이다!</string>
+    <string name="hello_world">내가 바로 존박 닮은꼴이다</string>
     <string name="menu_settings">Settings</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="overflow">Menu Overflow</string>
+    <string name="color_stripe">Color Stripe</string>
     <string name="title_activity_home">모바일일신</string>
     <string name="title_activity_notification">공지사항</string>
     <string name="title_activity_launchmenu">오늘 점심메뉴</string>
