@@ -72,7 +72,7 @@
                 android:value="com.iadev.mobileilsin.Appinfo" />
         </activity>
         <activity
-            android:name="com.iadev.mobileilsin.Schoolalarm"     android:label="@string/title_activity_schoolalarm"
+            android:name="com.iadev.mobileilsin.Widgetsetting"     android:label="@string/title_activity_widgetsetting"
             android:parentActivityName="com.iadev.mobileilsin.Home" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
