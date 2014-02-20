@@ -80,17 +80,17 @@ public class Home extends Activity {
                     });
             mCardView.addCard(appinfocard);
             
-            MyPlayCard schoolalarmocard = new MyPlayCard(
-                    "등교알람", 
+            MyPlayCard widgetsettingcard = new MyPlayCard(
+                    "위젯설정", 
                     "", 
                     "#808000", "#808000", false, true);
-            schoolalarmocard.setOnClickListener(new OnClickListener() {
+            widgetsettingcard.setOnClickListener(new OnClickListener() {
                         public void onClick(View v) {
-                        	Intent intent = new Intent(Home.this, Schoolalarm.class);
+                        	Intent intent = new Intent(Home.this, Widgetsetting.class);
                             startActivity(intent);
                         }
                     });
-            mCardView.addCard(schoolalarmocard);
+            mCardView.addCard(widgetsettingcard);
             
             
             // draw cards

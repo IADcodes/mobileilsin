@@ -4,9 +4,10 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <WebView
-        android:id="@+id/webView1"
+    <ListView
+        android:id="@+id/notificationlistView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content" >
+    </ListView>
 
 </LinearLayout>

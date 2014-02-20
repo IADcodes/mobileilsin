@@ -16,9 +16,6 @@ import android.os.IBinder;
 import android.util.Log;
 import android.widget.RemoteViews;
 import android.widget.TextView;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
 import java.util.Calendar;
 
 public class Lunchmenu extends Service {
@@ -40,7 +37,7 @@ public class Lunchmenu extends Service {
 		
 		Log.d("LunchmenuService", "Getting Lunchmenu");
 		IntentFilter filter = new IntentFilter();
-		filter.addAction(Intent.ACTION_TIME_CHANGED);
+		filter.addAction(Intent.ACTION_DATE_CHANGED);
 		Log.d("LunchmenuService", "parsing");
 		handler = new Handler();
 		new Thread(runnable).start();
@@ -56,18 +53,13 @@ public class Lunchmenu extends Service {
 			}
 			handler.post(new Runnable(){
 				public void run(){
-					int mDay = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 					SharedPreferences pref = getSharedPreferences("pref", Context.MODE_PRIVATE);
-					int loadedmDay = pref.getInt("mDay",0);
-					if(mDay != loadedmDay){
-						Elements food = doc.select("div.menu > span");
-						food = doc.select("div.menu > span");
-						String foodstring = food.get(1).text().replaceAll(" ", "\n");
-						SharedPreferences.Editor editor = pref.edit(); 
-						editor.putString("foodvalue", foodstring);
-						editor.putInt("mDay", mDay);
-						editor.commit();
-					}
+					Elements food = doc.select("div.menu > span");
+					food = doc.select("div.menu > span");
+					String foodstring = food.get(1).text().replaceAll(" ", "\n");
+					SharedPreferences.Editor editor = pref.edit(); 
+					editor.putString("foodvalue", foodstring);
+					editor.commit();
 				}
 			});
 		}

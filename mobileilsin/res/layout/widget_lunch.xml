@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="146dp"
+    android:layout_height="146dp"
+    android:background="#00000000"
     android:orientation="vertical" >
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:text="네트워크에 연결되지 않았습니다" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/widgettext"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="점심 메뉴 \n 네트워크에 연결되지 않았습니다"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    <ImageSwitcher
+        android:id="@+id/widgetbg"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:src="@drawable/widget1" />
+</FrameLayout>

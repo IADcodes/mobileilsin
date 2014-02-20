@@ -9,10 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 import android.widget.RemoteViews;
-import android.appwidget.AppWidgetManager;
-import android.content.BroadcastReceiver;
-import android.content.ComponentName;
-import android.content.Context;
+import android.widget.TextView;
 
 public class TodayLunchwidget extends AppWidgetProvider {
 	@Override
@@ -29,13 +26,13 @@ public class TodayLunchwidget extends AppWidgetProvider {
 
 		
 		}
-	
 	public void initUI(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
 		 SharedPreferences pref = context.getSharedPreferences("pref", Context.MODE_PRIVATE);
 		 String loadedfoodstring = pref.getString("foodvalue","");
+		 int loadedwidgetBackgroundId = pref.getInt("widgetBackgroundId", 0);
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget_lunch);
-        views.setTextViewText(R.id.text, loadedfoodstring);
- 
+        views.setTextViewText(R.id.widgettext, "점심 메뉴 \n \n"+ loadedfoodstring);
+        views.setImageViewResource(R.id.widgetbg ,loadedwidgetBackgroundId);
         for(int appWidgetId : appWidgetIds) {
             appWidgetManager.updateAppWidget(appWidgetId, views);
         }
